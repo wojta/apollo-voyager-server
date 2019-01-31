@@ -35,8 +35,6 @@ workflows:
   build_and_release:
     jobs:
       - containers_publish:
-          requires:
-            - npm_publish
           filters:
             tags:
               only: /.*/
