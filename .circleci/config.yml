@@ -23,7 +23,7 @@ jobs:
           name: run lint
           command: npm run lint
   containers_publish:
-    working_directory: ~/examples
+    working_directory: ~/aerogear/examples
     docker:
       # Node 8 LTS
       - image: circleci/node:carbon
