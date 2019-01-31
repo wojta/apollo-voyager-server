@@ -29,7 +29,7 @@ jobs:
       - image: docker:17.05.0-ce-git
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
           version: 17.05.0-ce
           docker_layer_caching: true
       - run: cd examples && TAG=$CIRCLE_TAG ./push-script.sh basic
