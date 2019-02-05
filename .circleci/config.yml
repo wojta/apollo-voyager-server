@@ -101,8 +101,8 @@ workflows:
               ignore: /.*/
       - publish_example_containers:
           requires:
-            - npm_publish
-            - test_examples
+          #  - npm_publish
+          #  - test_examples
           filters:
             tags:
               only: /.*/
