@@ -15,6 +15,6 @@ do
       CONTAINER="$NAMESPACE/voyager-server-example-$dir:$TAG"
       CONTAINER_LATEST="$NAMESPACE/voyager-server-example-$dir:latest"
       echo "Building docker container $CONTAINER"
-      docker build -f Dockerfile -t "$CONTAINER" --build-arg directory="$dir". && docker push "$CONTAINER" && \
+      docker build -f Dockerfile -t "$CONTAINER" --build-arg directory="$dir" . && docker push "$CONTAINER" && \
       docker tag "$CONTAINER" "$CONTAINER_LATEST" && docker push "$CONTAINER_LATEST"
  done
