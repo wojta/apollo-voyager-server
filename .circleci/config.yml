@@ -76,7 +76,7 @@ jobs:
           version: 17.05.0-ce
           docker_layer_caching: true
       - run: |
-          cd server
+          cd examples
           TAG=$CIRCLE_TAG ../scripts/publish_example_containers.sh basic
 workflows:
   version: 2

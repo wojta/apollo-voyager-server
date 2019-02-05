@@ -7,7 +7,7 @@ docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
 
 #script takes as params the names of directories of examples that should be pushed
 TAG="${TAG:-latest}"
-NAMESPACE="aerogear"
+NAMESPACE="vsazelci"
 
 for dir in "$@"
 do
